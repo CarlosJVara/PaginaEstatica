@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series de Moda</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#111;
+font-family:Inter,sans-serif;
+color:#fff;
+}
+
+header{
+padding:70px;
+text-align:center;
+background:linear-gradient(to bottom,#000,#111);
+}
+
+header h1{
+font-family:Playfair Display;
+font-size:60px;
+color:#D4AF37;
+}
+
+header p{
+margin-top:15px;
+font-size:20px;
+color:#ccc;
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+padding:60px;
+}
+
+.card{
+
+background:#1b1b1b;
+border-radius:16px;
+overflow:hidden;
+transition:.35s;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(212,175,55,.25);
+
+}
+
+.card img{
+
+width:100%;
+height:420px;
+object-fit:cover;
+
+}
+
+.info{
+
+padding:25px;
+
+}
+
+.info h2{
+
+font-family:Playfair Display;
+margin-bottom:10px;
+color:#D4AF37;
+
+}
+
+.badge{
+
+display:inline-block;
+padding:5px 10px;
+background:#D4AF37;
+color:#111;
+border-radius:30px;
+font-size:12px;
+margin-bottom:15px;
+
+}
+
+button{
+
+margin-top:20px;
+padding:12px 20px;
+border:none;
+background:#D4AF37;
+cursor:pointer;
+font-weight:bold;
+border-radius:8px;
+
+}
+
+button:hover{
+
+background:white;
+
+}
+
+footer{
+
+padding:30px;
+text-align:center;
+color:#777;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Series de Moda</h1>
+
+<p>Las mejores series disponibles en las principales plataformas de España.</p>
+
+</header>
+
+<section class="grid">
+
+<div class="card">
+
+<img src="https://via.placeholder.com/400x600" alt="Serie">
+
+<div class="info">
+
+<span class="badge">Netflix</span>
+
+<h2>Mi Serie Favorita</h2>
+
+<p><strong>Género:</strong> Thriller</p>
+
+<p><strong>Temporadas:</strong> 2</p>
+
+<p><strong>Valoración:</strong> ★★★★★</p>
+
+<p>Una intrigante historia llena de misterio y giros inesperados.</p>
+
+<button>Más información</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/400x600" alt="Serie">
+
+<div class="info">
+
+<span class="badge">Max</span>
+
+<h2>Otra Serie</h2>
+
+<p><strong>Género:</strong> Drama</p>
+
+<p><strong>Temporadas:</strong> 4</p>
+
+<p><strong>Valoración:</strong> ★★★★☆</p>
+
+<p>Una producción de gran calidad con un reparto excelente.</p>
+
+<button>Más información</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Series de Moda
+
+</footer>
+
+</body>
+</html>
